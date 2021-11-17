@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tictac.css">
+</head>
+<body>
+    <div class="header">
+        <header>
+            <h1>Tic Tac Toe</h1>
+        </header>
+    </div>
+    <div class="gameStyle">
+        <div onclick="botAlert()" class="bot">
+            BOT
+        </div>
+        <div onclick="friendAlert()" class="friend">
+            FRIEND 
+        </div>
+    </div>
+    <div class="board">
+        <div class="friend1">
+            <div class="history1">
+                <div  class="win">
+                    <p>Win</p>
+                    <p id="win1" >0</p>
+                </div>
+                <div class="lost">
+                    <p>Lost</p>
+                    <p id="lost1">0</p>
+                </div>
+                <div class="draw"><p>Draw</p>
+                <p id="draw1">0</p>
+                </div>
+            </div>
+            <div class="photo1">
+                <img src="User.jpg" alt="User" />
+            </div>
+        </div>
+        <div id="name1">Player1</div>
+        <div class="tictac">
+            <div class="commonLine" id="hr1"></div>
+            <div class="commonLine" id="hr2"></div>
+            <div class="commonLine" id="hr3"></div>
+            <div class="commonLine" id="vr1"></div>
+            <div class="commonLine" id="vr2"></div>
+            <div class="commonLine" id="vr3"></div>
+            <div class="commonLine" id="dl1"></div>
+            <div class="commonLine" id="dl2"></div>
+            <div id="sq11"></div>
+            <div id="sq12"></div>
+            <div id="sq13"></div>
+            <div id="sq21"></div>
+            <div id="sq22"></div>
+            <div id="sq23"></div>
+            <div id="sq31"></div>
+            <div id="sq32"></div>
+            <div id="sq33"></div>
+            <div id="alert" class="alertbox">
+                <span id="alertText"></span>
+                <button class="btn" onclick="removeAlert()">Ok</button>
+            </div>
+        </div>
+        <div class="friend2">
+            <div class="history2">
+                <div class="win2">
+                    <p>Win</p>
+                    <p id="win2">0</p>
+                </div>
+                <div class="lost2">
+                    <p>Lost</p>
+                    <p id="lost2">0</p>
+                </div>
+                <div class="draw2"><p>Draw</p>
+                <p id="draw2">0</p>
+                </div>
+            </div>
+            <div class="photo2">
+                <img src="User.jpg" alt="User" />
+            </div>
+        </div>
+        <div id="name2">Player2</div>
+    </div>
+   <script src="tictac.js">
+        
+    </script>
+</body>
+</html>
